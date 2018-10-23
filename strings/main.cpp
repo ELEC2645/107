@@ -42,4 +42,21 @@ int main() {
   std::string middle_initial = "A. ";
   fullname.insert(6, middle_initial);
   std::cout << "My full name is " << fullname << std::endl;
+
+  // and also search for substrings
+  // create a csv string
+  std::string csv = "Evans,87";
+
+  // find the position of the comma
+  std::size_t pos = csv.find(',');
+  std::string name;
+  int score;
+  // if the string contains a comma
+  if (pos != std::string::npos) {
+    // the name is from the beginning (0) to the comma (pos)
+    name = csv.substr(0, pos);
+    // the score is after the comma (pos+1) to the end
+    score = std::stoi(csv.substr(pos + 1));
+    std::cout << "Name: " << name << " Score = " << score << std::endl;
+  }
 }

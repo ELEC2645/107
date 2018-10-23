@@ -32,7 +32,7 @@ int main() {
   if (int_map.count(key) == 0) {
     std::cout << key << " does not exist in the map\n";
   } else {
-    std::cout << key << "does exist and has a value of " << int_map[key]
+    std::cout << key << " does exist and has a value of " << int_map[key]
               << std::endl;
   }
   // try another key
