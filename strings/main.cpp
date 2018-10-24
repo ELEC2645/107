@@ -32,11 +32,10 @@ int main() {
   // front gets the first character of string
   // you can probably guess what back() does
   // we could also treat it like an array i.e. forename[0]
-
-  std::cout << "My surname has " << surname.size() << " letters.\n";
-
   std::cout << "My initials are " << first_initial << second_initial
             << std::endl;
+
+  std::cout << "My surname has " << surname.size() << " letters.\n";
 
   // we can insert a substring into a string
   std::string middle_initial = "A. ";

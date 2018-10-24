@@ -34,7 +34,7 @@ int main() {
 
   // we can easy delete the last element
   v.pop_back();
-
+  
   std::cout << "The contents are now:\n";
   // iterate through and print values
   for (std::vector<int>::iterator i = v.begin(); i < v.end(); i++) {
