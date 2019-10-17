@@ -21,6 +21,11 @@ int main() {
   my_byte.flip(1);   // flip bit 1
   std::cout << my_byte << std::endl;
 
+  std::cout << "Access individual bits:\n";
+  std::cout << "Bit 7 is " << my_byte[7] << std::endl;
+  std::cout << "Can also do it with the test() member function:\n";
+  std::cout << "Bit 0 is " << my_byte.test(0) << std::endl;
+
   // we can convert a bitset to an integer (unsigned long)
   unsigned long byte_value = my_byte.to_ulong();
   std::cout << "The byte has a value " << byte_value << std::endl;
