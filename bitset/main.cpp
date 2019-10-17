@@ -32,4 +32,12 @@ int main() {
   // and also to a string
   std::string byte_string = my_byte.to_string();
   std::cout << "The byte string is " << byte_string << std::endl;
+
+  // some bit-wise operations
+  std::bitset<4> a(5);
+  std::bitset<4> b(3);
+  std::bitset<4> z = a | b;  // OR
+  std::cout << a << " OR " << b << " = " << z << std::endl; 
+
+
 }
